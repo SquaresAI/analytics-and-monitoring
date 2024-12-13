@@ -1,0 +1,23 @@
+{
+    "title": "Performance Dashboard",
+    "widgets": [
+        {
+            "type": "line_chart",
+            "title": "Model Inference Latency",
+            "data_source": "metrics.performance.latency",
+            "settings": {
+                "x_axis": "Time",
+                "y_axis": "Latency (ms)"
+            }
+        },
+        {
+            "type": "bar_chart",
+            "title": "GPU Utilization",
+            "data_source": "metrics.performance.gpu_utilization",
+            "settings": {
+                "x_axis": "Time",
+                "y_axis": "Utilization (%)"
+            }
+        }
+    ]
+}

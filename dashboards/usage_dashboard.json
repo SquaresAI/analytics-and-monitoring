@@ -1,0 +1,30 @@
+{
+    "title": "Usage Dashboard",
+    "widgets": [
+        {
+            "type": "pie_chart",
+            "title": "Resource Allocation Distribution",
+            "data_source": "usage.resource_allocation",
+            "settings": {
+                "categories": [
+                    "GPU",
+                    "CPU",
+                    "RAM",
+                    "Storage"
+                ]
+            }
+        },
+        {
+            "type": "table",
+            "title": "Top Consumers",
+            "data_source": "usage.top_consumers",
+            "settings": {
+                "columns": [
+                    "User ID",
+                    "Resources Used",
+                    "Time Consumed"
+                ]
+            }
+        }
+    ]
+}
